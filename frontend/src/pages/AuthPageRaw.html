@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VLX | VIT Student Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container-high": "#e2e8f8",
+                        "primary-container": "#1a56db",
+                        "on-background": "#151c27",
+                        "surface-tint": "#1353d8",
+                        "primary": "#003fb1",
+                        "on-primary-fixed-variant": "#003dab",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "tertiary": "#005439",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#d4dcff",
+                        "secondary-fixed-dim": "#d2bbff",
+                        "secondary-fixed": "#eaddff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#7ff2be",
+                        "on-surface-variant": "#434654",
+                        "inverse-primary": "#b5c4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#7127e5",
+                        "on-tertiary-fixed-variant": "#005137",
+                        "surface-container-highest": "#dce2f3",
+                        "surface-container-low": "#f0f3ff",
+                        "inverse-surface": "#2a313d",
+                        "secondary-container": "#8b4aff",
+                        "tertiary-fixed-dim": "#68dba9",
+                        "on-tertiary-fixed": "#002114",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5a00c6",
+                        "primary-fixed": "#dbe1ff",
+                        "surface": "#f9f9ff",
+                        "outline-variant": "#c3c5d7",
+                        "surface-dim": "#d3daea",
+                        "surface-container": "#e7eefe",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed": "#00174d",
+                        "tertiary-fixed": "#85f8c4",
+                        "background": "#f9f9ff",
+                        "on-secondary-fixed": "#25005a",
+                        "surface-variant": "#dce2f3",
+                        "outline": "#737686",
+                        "tertiary-container": "#006f4d",
+                        "on-surface": "#151c27"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background selection:bg-primary-container selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-panel shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-xl font-bold tracking-tight text-blue-700">VLX VIT Vellore</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="#">Marketplace</a>
+<a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="#">Messages</a>
+<a class="text-slate-600 font-medium hover:text-blue-600 transition-colors" href="#">My Listings</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 rounded-xl bg-gradient-to-r from-primary to-primary-container text-white font-semibold text-sm scale-95 active:scale-90 transition-transform duration-200">Sell</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img alt="Student Profile Avatar" class="w-full h-full object-cover" data-alt="professional portrait of a university student with a clean minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgwv97X1jAEY2z0zGdTknReGhSYQ44nNJkQsgB7IlQ5jNBJcO_4xgr11nPqN_z1gpxK3yEh0HJoA8jbCCCTQ6gUdgNkeNKhbrr--jFySgtTCRFrStMR5vr0g2CZGGsMLIQQieoKpyUi_PW95hm7tMgP-AEvUUVYgEXuIymov2RKWomDtBnWk7k1LKpekr0Cvg2jXT_jpOSywWiKTVvKYoBLgR6x03X6DlvXjusLiQAx1LfUVHUKLPC01qN4gddCZO6JrBZrDtBsQ"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="relative min-h-screen pt-24 flex flex-col items-center overflow-hidden">
+<!-- Abstract Background Elements -->
+<div class="absolute top-0 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute bottom-0 -right-20 w-[32rem] h-[32rem] bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<!-- Hero Section -->
+<section class="w-full max-w-7xl px-6 py-12 md:py-24 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-bold tracking-widest uppercase">
+                    Official Student Network
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background leading-[1.1]">
+                    The <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Marketplace</span> for VITians.
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-md font-medium leading-relaxed">
+                    Buy, sell, and trade with verified peers from your campus. Safe, fast, and exclusively for the VIT Vellore community.
+                </p>
+<!-- Verification Guard Component -->
+<div class="w-full max-w-md p-6 bg-surface-container-lowest rounded-3xl shadow-xl shadow-on-surface/5 border border-outline-variant/10">
+<div class="space-y-4">
+<label class="block text-sm font-bold text-on-surface-variant tracking-wide uppercase">Institutional Verification</label>
+<div class="relative group">
+<input class="w-full h-14 pl-4 pr-12 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-primary transition-all placeholder:text-slate-400 font-medium" placeholder="student.name2024@vitstudent.ac.in" type="email"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-primary" data-icon="verified_user">verified_user</span>
+</div>
+<!-- Tooltip State (Mockup) -->
+<div class="flex items-start gap-2 p-3 rounded-lg bg-error-container/30 text-error text-xs font-medium border border-error/10">
+<span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+                            Currently exclusive to VIT Vellore. Use your @vitstudent.ac.in email.
+                        </div>
+<button class="w-full h-14 rounded-xl bg-slate-200 text-slate-400 font-bold opacity-70 cursor-not-allowed transition-all flex items-center justify-center gap-2" disabled="">
+                            Verify Email
+                            <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bento Grid Visual Component -->
+<div class="hidden lg:grid grid-cols-2 gap-4 h-[500px]">
+<div class="bg-surface-container-low rounded-3xl p-6 flex flex-col justify-between group overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-500" data-alt="modern smartphone and laptop on a clean desk with soft lighting showcasing tech products" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ_5WuTb6ER0fAmqurCsigfnDGM57UIylkt_VWkevAufdzX1QSk_6Ow0qzqXTv1qunigfTlYJ6-LsffFC6Xd4wlodOGBPaSh8mmjRldHFp5Rjn1NER4iUJandKEaS0etQHXjVB1Wsu8aCeNWVR4dbqbflHwW6m6gF1liz4lNr0kH-xGWdDD9blZXZiNxkoTGN-AKP9_wvYrmmIFLVrWAP-9pSnW7WGE110pdvpcFrzttS4bNfQqIbdrmdbHdLCLRJrUUliKPZbkQ"/>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="laptop_mac">laptop_mac</span>
+<h3 class="text-xl font-bold">Tech Deals</h3>
+</div>
+<p class="text-xs font-medium text-on-surface-variant relative z-10">Upgraded gadgets from fellow seniors.</p>
+</div>
+<div class="bg-primary rounded-3xl p-6 text-white flex flex-col justify-between items-start">
+<span class="text-4xl font-extrabold">2.4k+</span>
+<div class="space-y-1">
+<h3 class="text-lg font-bold">Active Listings</h3>
+<p class="text-xs text-on-primary-container font-medium">Updated 5 minutes ago</p>
+</div>
+</div>
+<div class="col-span-2 bg-secondary/10 border border-secondary/20 rounded-3xl p-8 flex items-center justify-between">
+<div class="space-y-2">
+<h3 class="text-2xl font-bold text-secondary">Campus Trusted</h3>
+<p class="text-sm text-on-surface-variant font-medium">All users are verified through VTOP API credentials.</p>
+</div>
+<div class="flex -space-x-4">
+<img alt="User" class="w-12 h-12 rounded-full border-4 border-surface" data-alt="student profile icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtSfz6oMt3tfKXXmOoww5j5FqsbHKa1CJalFYUSt87rmTgy-boQxdIuj6Vuoa_Cyxi8SPQhWULHw0FQWma_uzuwpAm5xldKNbsKvMevXagjaD1JDWzODsoZeS4lbN0zUOWrnc0NpyMIzEZqmpA0DWnBnBuk0oXVVo7BENuGNOZ81LmyKhbebkveAodc7KYmFh-DzdY7MN0_xBQIJunfHBD5NsRlZonuPky-RhESAlrVvZ5MFQDHMMHs4MSIbJq_q7z74PX7VW-Yw"/>
+<img alt="User" class="w-12 h-12 rounded-full border-4 border-surface" data-alt="student profile icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLEsDqlo0Y6yt2Wl236h4SmC46VHHA0U-VFE3BAi_ZX0eBd-a61n8_4ShhXh2PODq0PDmMpjB6WXrKPmxERHoP3MqN_zp9pi9kufK9p3DJrkZ6bLdnOzla1GMsSfVGRTjv0jar9gCkiE7CO3gmNerhPVIwMK0QOiyXLzfKRkiZPcOdsPYXGgHcN3JGbgMBhVhswB1kzZK1gCQDqVPCxS70eaYC4TQCu_zsdBB_JuN1uQcfmRtbRsNIzRxxU9pCcQ6Cns7STgwh_Q"/>
+<img alt="User" class="w-12 h-12 rounded-full border-4 border-surface" data-alt="student profile icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqq1x8URRFA-DCXUr_rUQMZK28e943Wtl8VnVvUW0tNmBDsqJzrpitKTM0sIQSWqwv1dRMiUvM9U0GEEOnjDPCucsSjjGH5B3WAdNphoMOBMOgGRv-Zpydh5jS-gDBlNYC0QOBMnJ5ZkwHJH4Dxfkmz4VWFCdxOKf7EL-34O7e-btf8n-oiNatKxcXul8oN9uk_6u6nfjJn2Z7CfTgDH0cN7YAwbhbP4t92G1SV4ZfafmrQzg6vfcJK3d_woH01efx17O231cHAg"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- OTP Overlay (Active State Mockup) -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center px-4 bg-on-background/40 backdrop-blur-md">
+<div class="w-full max-w-lg glass-panel p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white/40 text-center animate-in fade-in zoom-in duration-300">
+<div class="mb-8">
+<div class="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<h2 class="text-3xl font-extrabold text-on-background mb-2">Check your inbox</h2>
+<p class="text-on-surface-variant font-medium">We sent a 6-digit code to <span class="text-primary">alex.s2023@vitstudent.ac.in</span></p>
+</div>
+<!-- OTP Input Field -->
+<div class="flex justify-center gap-3 mb-10">
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" type="text" value="4"/>
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" type="text" value="9"/>
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" placeholder="•" type="text"/>
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" placeholder="•" type="text"/>
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" placeholder="•" type="text"/>
+<input class="w-12 h-16 md:w-16 md:h-20 text-center text-3xl font-bold rounded-2xl bg-surface-container-high border-none focus:ring-4 focus:ring-primary/20 transition-all text-on-background" maxlength="1" placeholder="•" type="text"/>
+</div>
+<div class="space-y-6">
+<button class="w-full h-16 rounded-2xl bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-[0.98]">
+                    Verify &amp; Continue
+                </button>
+<div class="flex flex-col items-center gap-2">
+<p class="text-sm font-medium text-on-surface-variant">Didn't receive the code?</p>
+<button class="text-primary font-bold hover:underline inline-flex items-center gap-1">
+                        Resend Code <span class="text-xs bg-primary-fixed-dim px-2 py-0.5 rounded-full">00:54</span>
+</button>
+</div>
+</div>
+<button class="mt-8 text-on-surface-variant font-semibold text-sm hover:text-on-background flex items-center justify-center gap-2 mx-auto">
+<span class="material-symbols-outlined text-lg" data-icon="arrow_back">arrow_back</span>
+                Use a different email
+            </button>
+</div>
+</div>
+<!-- Footer Component -->
+<footer class="w-full bg-slate-50 border-t border-slate-200 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-4">
+<div class="flex flex-col gap-1">
+<span class="font-bold text-slate-900">VLX VIT Vellore</span>
+<p class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500">© 2024 VLX VIT Vellore Community. Built for students.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 transition-opacity opacity-80 hover:opacity-100" href="#">About</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 transition-opacity opacity-80 hover:opacity-100" href="#">Safety Guidelines</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 transition-opacity opacity-80 hover:opacity-100" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

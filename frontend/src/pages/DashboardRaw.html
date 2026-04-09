@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-container-high": "#e2e8f8",
+                    "primary-container": "#1a56db",
+                    "on-background": "#151c27",
+                    "surface-tint": "#1353d8",
+                    "primary": "#003fb1",
+                    "on-primary-fixed-variant": "#003dab",
+                    "primary-fixed-dim": "#b5c4ff",
+                    "tertiary": "#005439",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#d4dcff",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "secondary-fixed": "#eaddff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#7ff2be",
+                    "on-surface-variant": "#434654",
+                    "inverse-primary": "#b5c4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#7127e5",
+                    "on-tertiary-fixed-variant": "#005137",
+                    "surface-container-highest": "#dce2f3",
+                    "surface-container-low": "#f0f3ff",
+                    "inverse-surface": "#2a313d",
+                    "secondary-container": "#8b4aff",
+                    "tertiary-fixed-dim": "#68dba9",
+                    "on-tertiary-fixed": "#002114",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "primary-fixed": "#dbe1ff",
+                    "surface": "#f9f9ff",
+                    "outline-variant": "#c3c5d7",
+                    "surface-dim": "#d3daea",
+                    "surface-container": "#e7eefe",
+                    "surface-bright": "#f9f9ff",
+                    "on-secondary-container": "#fffbff",
+                    "on-primary-fixed": "#00174d",
+                    "tertiary-fixed": "#85f8c4",
+                    "background": "#f9f9ff",
+                    "on-secondary-fixed": "#25005a",
+                    "surface-variant": "#dce2f3",
+                    "outline": "#737686",
+                    "tertiary-container": "#006f4d",
+                    "on-surface": "#151c27"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .tonal-shift { background: linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to)); }
+        .glass-nav { backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tight text-blue-700 dark:text-blue-400">VLX VIT Vellore</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Marketplace</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Messages</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">My Listings</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:opacity-90 transition-transform active:scale-95">Sell</button>
+<div class="w-10 h-10 rounded-full border-2 border-primary-fixed overflow-hidden">
+<img alt="Student Profile Avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a young male student with a friendly expression, soft natural sunlight, academic campus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvhingDpZ0yO_nxS88jpSZ9j-NsfWZvwKxmozpdPrOjR-twxTyThtXY7TtaO7hn2DtGrgaCaOVphjvVW5uPxMvkm1MCiGGOrng59oyWOUnvoOd-QIffrMlqGcDK5QNNBLvfBIlFtQy0tkhKPciDshRfySVYLKhwCptp-sWia5CPdzOXk0QL9E_AR4j-qNG5zTaJsQNSMKOWxdHdF7Z0srjG4kTqjkTQw8n8Vxuw3pRYAyOSLR7_rceOEY47TJSA9rpE3FonNtYlQ"/>
+</div>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-6 max-w-7xl mx-auto">
+<!-- Profile Header Section -->
+<section class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12">
+<div class="flex items-center gap-6">
+<div class="relative">
+<div class="w-24 md:w-32 h-24 md:w-32 rounded-3xl overflow-hidden shadow-xl">
+<img alt="Arjun Mehta" class="w-full h-full object-cover" data-alt="Portrait of a South Asian university student in a casual hoodie, standing against a modern architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArnxYce0obO8SpC_E8k4FxktzeRejuKecqHoWiascXe7hbHs0GTy94evdt4lDZTBjgmrId1gTHNLTp4ZLvYTR9ktyoxf824MA7ZWe4mdx7HRHs8bEq5qgBJwfj7hmqolFN6wzhUvKgHeHeBZIQlIXdjEkXW8FevhfVqPmteSwcdSZLnZioc97ab-KVf6zF5bQH6ndb7-c9HcCWf-A37_nJugvCVC82fIIJtGOPly2MkqJJLfAIxenhpnD13YpCvQpU0_jqAxgINg"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary p-1.5 rounded-xl shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-1">
+<h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">Arjun Mehta</h1>
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            Verified Student
+                        </span>
+</div>
+<p class="text-on-surface-variant font-medium">B.Tech Computer Science '25 • Vellore Campus</p>
+</div>
+</div>
+<!-- Action Hub -->
+<div class="flex gap-3 w-full md:w-auto">
+<button class="flex-1 md:flex-none bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all active:scale-95">
+<span class="material-symbols-outlined text-sm">add_circle</span>
+                    Post New Listing
+                </button>
+<button class="flex-1 md:flex-none bg-primary-fixed-dim text-on-primary-fixed px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-80 transition-all">
+<span class="material-symbols-outlined text-sm">edit</span>
+                    Edit Profile
+                </button>
+</div>
+</section>
+<!-- Stats Bar & Quick Metrics -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
+<div class="md:col-span-3 bg-surface-container-low rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<div class="text-label-md text-on-surface-variant font-bold uppercase tracking-widest mb-1">Items Sold</div>
+<div class="text-4xl font-extrabold text-primary">24</div>
+</div>
+<div class="h-px w-full md:h-12 md:w-px bg-outline-variant/30"></div>
+<div class="text-center md:text-left">
+<div class="text-label-md text-on-surface-variant font-bold uppercase tracking-widest mb-1">Active Listings</div>
+<div class="text-4xl font-extrabold text-secondary">07</div>
+</div>
+<div class="h-px w-full md:h-12 md:w-px bg-outline-variant/30"></div>
+<div class="text-center md:text-left">
+<div class="text-label-md text-on-surface-variant font-bold uppercase tracking-widest mb-1">Avg. Rating</div>
+<div class="flex items-center gap-2">
+<div class="text-4xl font-extrabold text-on-surface">4.9</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container text-on-secondary-container rounded-3xl p-8 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-2">wallet</span>
+<div class="text-label-md font-bold uppercase tracking-widest opacity-80">Earnings</div>
+<div class="text-2xl font-bold">₹12,450</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Active Listings (Bento Large) -->
+<div class="md:col-span-8 space-y-6">
+<div class="flex justify-between items-end px-2">
+<h2 class="text-2xl font-bold">Your Active Listings</h2>
+<a class="text-primary font-bold text-sm hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest p-0 rounded-[1.5rem] overflow-hidden hover:scale-[1.02] transition-transform duration-300 group shadow-sm">
+<div class="h-48 overflow-hidden relative">
+<img alt="MacBook Air M1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="MacBook Air laptop open on a clean desk with soft lighting, minimalist student workspace aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMoQmsXp8ch6_A2Qs07DDXJV789PpypDjloe_GwXYKFcRU8Ve9sT41ABfu4c9XHRM5MP2ziQeXYNcouSWHgzEOmk7VCbJdPwXag8_jqOrIKIRmbjBdUb42rH5PI-of1V33vPj6U81RoNHDY9uQjzQn8PPI7J7g7aDeGWJg15Z93SpB6IWH1DUt4rpG4RlgOjBirnh-J8J2QBVMRjUIwVfR7r0z7qQg7Lk7FP0fU0eSPs5KX1U_Fpa2ihx_WWhLC_HMLE0F10X-eQ"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">₹45,000</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">MacBook Air M1 (2020) - 8GB/256GB</h3>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Excellent condition, 14 months old. Original bill and box available. Used primarily for coding.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">visibility</span>
+<span class="text-xs font-bold text-on-surface-variant">124 views</span>
+</div>
+<button class="text-primary text-sm font-bold flex items-center gap-1">Manage <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest p-0 rounded-[1.5rem] overflow-hidden hover:scale-[1.02] transition-transform duration-300 group shadow-sm">
+<div class="h-48 overflow-hidden relative">
+<img alt="Physics Textbook" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A stack of university textbooks on a wooden table, focused on a modern physics book, soft library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB_eLJpHYNtWaOpTQsYQKG6xUrbO2z-Cemc_MyzCJiD2y5cQATpNVOqF9HDtAzjFB-IY3G-glTnwWTIIphdf1TAqB4_AjRIZVvdQhytxHcGEEUYA0P1dKLv9fDlZFFnJFxDQdtGzviAxOpvkS1_0mkXwqoB1Gu4Cn_GIMsBU9Sbs6T48ogfKvsSp_PJYTz_ldQMEF6QUem8zsK5cRykbLD9A_17d9A5EKcEkLq5jqCdtBuBAdfQIj2QaIKQtmw91cvwXAZHzocFw"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary">₹800</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight">University Physics with Modern Physics</h3>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Latest edition. Minimal highlighting. Essential for 1st year engineering courses.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">visibility</span>
+<span class="text-xs font-bold text-on-surface-variant">42 views</span>
+</div>
+<button class="text-primary text-sm font-bold flex items-center gap-1">Manage <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Notifications / Activities (Bento Small/Tall) -->
+<div class="md:col-span-4 space-y-6">
+<div class="flex justify-between items-end px-2">
+<h2 class="text-2xl font-bold">Activity</h2>
+</div>
+<div class="bg-surface-container-low rounded-[1.5rem] p-6 h-[calc(100%-48px)]">
+<div class="space-y-6">
+<!-- Activity Item -->
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div>
+<p class="text-sm font-bold leading-snug">New offer received for MacBook Air</p>
+<p class="text-xs text-on-surface-variant">Rahul asked: "Is the price negotiable?"</p>
+<span class="text-[10px] uppercase font-bold text-outline tracking-wider mt-1 block">2 mins ago</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<p class="text-sm font-bold leading-snug">Listing Liked</p>
+<p class="text-xs text-on-surface-variant">3 people added your Casio Calculator to favorites.</p>
+<span class="text-[10px] uppercase font-bold text-outline tracking-wider mt-1 block">4 hours ago</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<p class="text-sm font-bold leading-snug">Listing Verified</p>
+<p class="text-xs text-on-surface-variant">Your listing for "Study Desk" is now live after review.</p>
+<span class="text-[10px] uppercase font-bold text-outline tracking-wider mt-1 block">Yesterday</span>
+</div>
+</div>
+<!-- Safety Tip Card -->
+<div class="mt-8 p-5 bg-white/50 rounded-2xl border border-white/50">
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined text-sm">gpp_maybe</span>
+<span class="text-xs font-bold uppercase tracking-widest">Safety Guideline</span>
+</div>
+<p class="text-xs font-medium text-on-surface-variant leading-relaxed">Always meet potential buyers in public areas like the Central Library or Mess during daylight hours.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-4">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-bold text-slate-900 dark:text-slate-100">VLX VIT VELLORE</div>
+<p class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500">© 2024 VLX VIT Vellore Community. Built for students.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-opacity" href="#">About</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-opacity" href="#">Safety Guidelines</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-opacity" href="#">Terms of Service</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-opacity" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>
